@@ -1,0 +1,150 @@
+body {
+  background: hsl(233, 47%, 7%);
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 120vh;
+  height: 28rem;
+  margin: auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+
+  background: hsl(244, 38%, 16%);
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  border-radius: 0.5rem;
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  width: 50%;
+  height: 100%;
+
+  border-radius: 0px 10px 10px 0px;
+}
+
+.main-text {
+  width: 31.25rem;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+}
+
+.all-text {
+  width: 31.25rem;
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+  margin-right: 0;
+}
+
+.p-tag {
+  width: 25rem;
+  line-height: 2rem;
+  height: 40px;
+  padding-top: 1rem;
+}
+
+.violet {
+  color: hsl(277, 64%, 61%);
+}
+
+.stats {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 45%;
+  margin-left: 2.5rem;
+}
+
+.stat {
+  margin-left: 0rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+}
+
+.stats-header {
+  width: 11.25rem;
+  margin-right: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 40rem) {
+  .main-content {
+    display: flex;
+    width: 30rem;
+    height: 115vh;
+    position: relative;
+  }
+  .box {
+    justify-content: center;
+    background-color: hsl(244, 38%, 16%);
+    position: absolute;
+    top: 9%;
+  }
+  .image {
+    display: none;
+  }
+  .mobile-image {
+    width: 100%;
+    height: 40%;
+    background-image: url(images/desktop-design.jpg);
+    position: absolute;
+    top: 0;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .all-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: 0;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .stats {
+    flex-direction: column;
+    height: 10rem;
+    position: absolute;
+    top: 69%;
+    left: 30%;
+    font-size: 0.8rem;
+    margin: auto;
+  }
+
+  .stat {
+    height: 5rem;
+    text-align: center;
+  }
+
+  .p-tag {
+    width: 100%;
+  }
+  .one::before {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .line-break::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .one {
+    width: 200px;
+    height: 40px;
+  }
+}
